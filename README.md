@@ -19,7 +19,7 @@ To make this work you need the `php-cgi` binaray in your PATH.
 var http = require('http');
 var gateway_rw = require('gateway-rewrite');
 
-var rwGateway = function (dir){
+var rwGateway = function (dir) {
     return gateway_rw(require('path').resolve(dir), {
        rules: [
           {
@@ -30,7 +30,7 @@ var rwGateway = function (dir){
         ]},
         grunt
     );
-  };
+};
 
 
   grunt.initConfig({
